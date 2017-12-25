@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:isScrollContainer="false"
+    android:windowSoftInputMode="adjustPan"
+    tools:context="com.example.vaibhav.robuto.joystick">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_activity" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/sensor_data_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="Select Joy-Stick Type"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@android:color/holo_green_light"
+                android:textColor="@android:color/black"/>
+
+            <Button
+                android:id="@+id/joystickbutton_type"
+                android:layout_below="@+id/sensor_data_text"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:text="Buttons"
+                android:onClick="Buttons"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/joystickjoypad_type"
+                android:layout_below="@+id/joystickbutton_type"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:text="JoyPad"
+                android:onClick="Joypad"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/joysticksensor_type"
+                android:layout_below="@+id/joystickjoypad_type"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:text="Sensor"
+                android:onClick="Sensor"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Under Construction: Vaibhav Tiwari\nDate Started: 08/30/2017"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

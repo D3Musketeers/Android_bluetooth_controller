@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:isScrollContainer="false"
+    android:windowSoftInputMode="adjustPan">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:isScrollContainer="false"
+        android:windowSoftInputMode="adjustPan"
+        tools:context="com.example.vaibhav.robuto.phone_sensor">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main_activity" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/sensor_data_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="Sensor data:"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/All_Sensors_available"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="Sensor data:"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/bottom_text"
+                    android:layout_below="@id/sensor_data_text">
+
+                <ListView
+                    android:id="@+id/sensorlistView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contextClickable="true"
+                    android:layout_toLeftOf="@+id/sensorvaluelistView"/>
+
+                <ListView
+                    android:id="@+id/sensorvaluelistView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contextClickable="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/acc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/gyro_value"
+                    android:layout_marginLeft="5dp"
+                    android:text="Accelerometer:"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/acc_value"
+                    android:layout_toRightOf="@id/acc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/gyro_value"
+                    android:layout_marginLeft="5dp"
+                    android:text="Accelerometer_value"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/gyro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/bottom_text"
+                    android:layout_marginLeft="5dp"
+                    android:text="Gyrometer:"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/gyro_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/bottom_text"
+                    android:layout_toRightOf="@id/gyro"
+                    android:layout_marginLeft="5dp"
+                    android:text="Gyrometer_value"
+                    android:textColor="@android:color/white"/>
+
+
+                <TextView
+                    android:id="@+id/bottom_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="Under Construction: Vaibhav Tiwari\nDate Started: 08/30/2017"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
